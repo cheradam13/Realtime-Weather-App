@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Wheather App</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Wheather</h1>
+            <div class="header__btns">
+                <input type="text" class="header__input" placeholder="Enter a city name">
+                <button class="header__btn--search">
+                    <i class="fa-regular fa-search"></i>
+                    Search
+                </button>
+                <button class="header__btn--location">
+                    <i class="bx bx-target-lock"></i>
+                    Current Location
+                </button>
+            </div>
+        </header>
+        <div class="weather__data">
+            <div class="weather__data-left">
+                <div class="current__weather">
+                    <h2 class="current__weather-title">Now</h2>
+                    <div class="current__weather-degrees">
+                        <p>______&deg;C</p>
+                        <img src="https://openweathermap.org/img/wn/01d@2x.png">
+                    </div>
+                    <div class="current__weather-wrap--haze"></div>
+                    <p class="current__weather-date">
+                        <i class="fa-light fa-calendar"></i>
+                        ______
+                    </p>
+                    <p class="current__weather-location">
+                        <i class="fa-light fa-location-dot"></i>
+                        ______
+                    </p>
+                </div>
+                <div class="week-forecast">
+                    <h2 class="week-forecast__title">5 days Forecast</h2>
+                    <ul class="week-forecast__list">
+                        <li class="week-forecast__item">
+                            <div class="week-forecast__degrees">
+                                <img src="https://openweathermap.org/img/wn/04n.png">
+                                <p>______&deg;C</p>
+                            </div>
+                            <span class="week-forecast__item-date">______</span>
+                            <span class="week-forecast__item-day">______</span>
+                        </li>
+                        <li class="week-forecast__item">
+                            <div class="week-forecast__degrees">
+                                <img src="https://openweathermap.org/img/wn/04n.png">
+                                <p>______&deg;C</p>
+                            </div>
+                            <span class="week-forecast__item-date">______</span>
+                            <span class="week-forecast__item-day">______</span>
+                        </li>
+                        <li class="week-forecast__item">
+                            <div class="week-forecast__degrees">
+                                <img src="https://openweathermap.org/img/wn/04n.png">
+                                <p>______&deg;C</p>
+                            </div>
+                            <span class="week-forecast__item-date">______</span>
+                            <span class="week-forecast__item-day">______</span>
+                        </li>
+                        <li class="week-forecast__item">
+                            <div class="week-forecast__degrees">
+                                <img src="https://openweathermap.org/img/wn/04n.png">
+                                <p>______&deg;C</p>
+                            </div>
+                            <span class="week-forecast__item-date">______</span>
+                            <span class="week-forecast__item-day">______</span>
+                        </li>
+                        <li class="week-forecast__item">
+                            <div class="week-forecast__degrees">
+                                <img src="https://openweathermap.org/img/wn/04n.png">
+                                <p>______&deg;C</p>
+                            </div>
+                            <span class="week-forecast__item-date">______</span>
+                            <span class="week-forecast__item-day">______</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weather__data-right">
+                <h2>Today's Highlights</h2>
+                <ul class="highlights">
+                    <li class="highlight highlight--air-quality-index">
+                        <div class="highlight__top">
+                            <h3 class="highlight__title">Air Quality Index</h3>
+                            <span class="highlight__mark">Good</span>
+                        </div>
+                        <ul class="highlight-metrics">
+                            <li class="highlight-metric">
+                                <i class="fa-regular fa-wind fa-3x"></i>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>PM2 5</span>
+                                <p>______</p>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>PM2 10</span>
+                                <p>______</p>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>SO2</span>
+                                <p>______</p>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>CO</span>
+                                <p>______</p>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>NO</span>
+                                <p>______</p>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>NO2</span>
+                                <p>______</p>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>NH3</span>
+                                <p>______</p>
+                            </li>
+                            <li class="highlight-metric">
+                                <span>O3</span>
+                                <p>______</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="highlight highlight--sunrise-sunset">
+                        <h2 class="highlight__title">Sunrise & Sunset</h2>
+                        <ul class="highlight__times">
+                            <li class="highlight__time">
+                                <i class="fa-light fa-sunrise fa-4x"></i>
+                                <div class="highlight__content">
+                                    <span>Sunrise</span>
+                                    <time datetime="05:39">______</time>
+                                </div>
+                            </li>
+                            <li class="highlight__time">
+                                <i class="fa-light fa-sunset fa-4x"></i>
+                                <div class="highlight__content">
+                                    <span>Sunset</span>
+                                    <time datetime="05:39">______</time>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="highlight highlight--quarter highlight--humidity">
+                        <h2 class="highlight__title">Humidity</h2>
+                        <div class="highlight__content">
+                            <i class="fa-light fa-droplet fa-2x"></i>
+                            <p>______</p>
+                        </div>
+                    </li>
+                    <li class="highlight highlight--quarter highlight--pressure">
+                        <h2 class="highlight__title">Pressure</h2>
+                        <div class="highlight__content">
+                            <i class="fa-light fa-compass fa-2x"></i>
+                            <p>______</p>
+                        </div>
+                    </li>
+                    <li class="highlight highlight--quarter highlight--visibility">
+                        <h2 class="highlight__title">Visibility</h2>
+                        <div class="highlight__content">
+                            <i class="fa-light fa-eye fa-2x"></i>
+                            <p>______</p>
+                        </div>
+                    </li>
+                    <li class="highlight highlight--quarter highlight--wind-speed">
+                        <h2 class="highlight__title">Wind Speed</h2>
+                        <div class="highlight__content">
+                            <i class="fa-light fa-location-arrow fa-2x"></i>
+                            <p>______</p>
+                        </div>
+                    </li>
+                    <li class="highlight highlight--quarter highlight--feels-like">
+                        <h2 class="highlight__title">Feels Like</h2>
+                        <div class="highlight__content">
+                            <i class="fa-light fa-temperature-list fa-2x"></i>
+                            <p>______&deg;C</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="today__wheather">
+                    <h2 class="today__title">Today at</h2>
+                    <ul class="today__list">
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">6 AM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">9 AM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">12 AM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">3 PM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">6 PM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">9 PM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">12 PM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+                        <li class="today__item">
+                            <time datetime="6:00" class="today__time">3 AM</time>
+                            <img src="https://openweathermap.org/img/wn/04d.png">
+                            <span class="today__degrees">______&deg;C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

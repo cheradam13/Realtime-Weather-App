@@ -1,0 +1,291 @@
+body {
+    background-color: var(--bg-color-1);
+    color: var(--white-color);
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+:root {
+    --bg-color-1: #212529;
+    --bg-color-2: #2a2b2d;
+    --white-color: #fff;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px 0;
+}
+
+.header__input {
+    background-color: var(--bg-color-2);
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.header__btn--search,
+.header__btn--location {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: var(--bg-color-1);
+}
+
+.header__btn--location {
+    background-color: #ea6e4b;
+}
+
+/* Weather */
+.weather__data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+/* Current Weather */
+.current__weather {
+    padding: 15px;
+    background-color: var(--bg-color-2);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.current__weather-title {
+    font-size: 24px;
+    color: #999;
+}
+
+.current__weather-degrees {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px 0;
+    font-size: 32px;
+    font-weight: 500;
+    
+}
+
+img {
+    width: 80px;
+}
+
+.current__weather-wrap--haze {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.current__weather-date,
+.current__weather-location {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+/* Weather Left */
+.weather__data-left {
+    grid-column: 1;
+}
+
+.week-forecast {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--bg-color-2);
+}
+
+.week-forecast__title {
+    margin: 7px 0;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.week-forecast__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+
+.week-forecast__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 15px;
+}
+
+.week-forecast__degrees {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Weather Right */
+.weather__data-right {
+    grid-column: 2 / 5;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.today__title {
+    margin: 20px 0 10px;
+}
+
+.today__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.today__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    background-color: var(--bg-color-2);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.today__item time,
+.today__item span {
+    font-size: 24px;
+    color: #999;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--bg-color-2);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.highlight__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.highlight__title {
+    font-size: 24px;
+    color: #999;
+}
+
+.highlight--air-quality-index {
+    grid-column: 1 / 3;
+}
+
+.highlight__top .highlight__mark {
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.highlight--sunrise-sunset {
+    grid-column: 3 / 6;
+}
+
+.highlight__times {
+    display: flex;
+    gap: 30px;
+}
+
+.highlight__time {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.highlight--air-quality-index .highlight__content,
+.highlight--sunrise-sunset .highlight__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+span {
+    color: #999;
+}
+
+time {
+    font-size: 32px;
+}
+
+i {
+    width: fit-content;
+}
+
+.highlight--quarter .highlight__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight--quarter .highlight__content p {
+    font-size: 32px;
+}
+
+/*  */
+.highlight--feels-like {
+    grid-column: 1 / 2;
+}
+
+.highlight-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+}
+
+.highlight-metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight-metric span {
+    color: #999;
+}
+.highlight-metric p {
+    font-size: 32px;
+}
+
+.highlight__mark--1 {
+    background-color: #d4e157;
+}
+.highlight__mark--2 {
+    background-color: #ffee58;
+}
+.highlight__mark--3 {
+    background-color: #ffca28;
+}
+.highlight__mark--4 {
+    background-color: #ff7043;
+}
+.highlight__mark--5 {
+    background-color: #ef5350;
+}

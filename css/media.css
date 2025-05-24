@@ -1,0 +1,146 @@
+@media (max-width: 1200px) {
+    .weather__data {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .week-forecast__list {
+        align-items: center;
+    }
+
+    .week-forecast__item {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+    
+    .highlights {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 14px;
+    }
+
+    .highlight--air-quality-index {
+        grid-column: 1 / 3;
+    }
+
+    .highlight-metrics .highlight-metric p {
+        font-size: 20px;
+    }
+
+    .highlight--sunrise-sunset {
+        grid-column: 1 / 3;
+    }
+
+    .highlight__times .highlight__time .highlight__content time {
+        font-size: 24px;
+    }
+
+    .highlight .highlight__title {
+        font-size: 20px;
+    }
+
+    .today__list {
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    /*  */
+    .today__item {
+        width: 23.5%;
+    }
+
+    .today__item span,
+    .today__item time {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 920px) {
+    .today__item {
+        min-width: 48%;
+    }
+}
+
+@media (max-width: 780px) {
+    .highlight--quarter {
+        grid-column: 1 / 3;
+    }
+
+    .highlight--feels-like {
+        grid-column: 1 / 3;
+    }
+
+    .today__item {
+        min-width: 100%;
+    }
+
+    .highlight__times {
+        flex-wrap: wrap;
+    }
+
+    .highlight__time {
+        min-width: 100%;
+        justify-content: space-between;
+    }
+
+    .highlight-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .weather__data {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather__data-left,
+    .weather__data-right {
+        grid-column: 1 / 3;
+    }
+
+    .week-forecast__item {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .highlight--humidity {
+        grid-column: 1 / 2;
+    }
+    .highlight--pressure {
+        grid-column: 2 / 4;
+    }
+    .highlight--wind-speed {
+        grid-column: 1 / 2;
+    }
+    .highlight--feels-like {
+        grid-column: 2 / 4;
+    }
+
+    .today__item {
+        min-width: 49%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header__btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .today__item {
+       min-width: 100%;
+    }
+
+    .highlight--quarter {
+        grid-column: 1 / 3;
+    }
+
+    .week-forecast__item {
+        font-size: 12px;
+    }
+}
