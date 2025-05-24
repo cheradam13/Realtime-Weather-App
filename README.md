@@ -1,2 +1,2 @@
 # Realtime-Weather-App
-App for searching wheather.
+App for searching weather.
